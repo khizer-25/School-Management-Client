@@ -127,7 +127,7 @@ const SentSMSHistory = () => {
                 </div>
             )}
 
-            {dataFetched && (
+            {/* {dataFetched && (
                 <div className="flex flex-wrap justify-between items-center mb-6 gap-4">
                     <input
                         type="text"
@@ -137,7 +137,7 @@ const SentSMSHistory = () => {
                         onChange={(e) => setSearchText(e.target.value)}
                     />
                 </div>
-            )}
+            )} */}
 
 {dataFetched && fromDate && toDate && (
     <div className="bg-white border border-blue-100 rounded-3xl shadow-md overflow-x-auto">

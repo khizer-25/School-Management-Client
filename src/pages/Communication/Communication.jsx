@@ -72,13 +72,6 @@ const Communication = ({ setPage }) => {
                 {renderComponent()}
             </div>
 
-            {/* Back Button */}
-            <button
-                onClick={() => setPage("dashboard")}
-                className="fixed bottom-4 left-4 bg-blue-800 text-white py-3 px-6 rounded-lg font-semibold shadow-lg transition-colors hover:bg-blue-700"
-            >
-                Back
-            </button>
         </div>
     );
 };

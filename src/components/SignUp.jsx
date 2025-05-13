@@ -51,12 +51,27 @@ const SignUp = () => {
             return;
         }
         
-        const result = await register({ name, email, password });
-        
-        if (result.success) {
-            navigate('/dashboard');
+        const result = await register({ name, email, password, confirmPassword });
+        if (result.error) {
+            toast.error(result.error);
+            return;
         }
-    };
+        if (result.message) {
+            toast.error(result.message);
+            return;
+        }
+
+        if (result.success) {
+            navigate('/login');
+        }
+        toast.success('Account created successfully');
+        setName('');
+        setEmail('');
+        setPassword('');
+        setConfirmPassword('');
+        setTermsAccepted(false);
+        setFormErrors({});
+        };
 
     if (loading) {
         return <Spinner />;

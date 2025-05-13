@@ -104,7 +104,7 @@ const FeesBalanceReport = () => {
       <div className="bg-white shadow-md rounded-lg p-4 mb-8">
       <div className="flex justify-between items-center mb-3">
         <h2 className="text-2xl font-bold text-blue-600 mb-6 ">Fee Balance Report</h2>
-        <select
+        {/* <select
           value={academicYear}
           onChange={(e) => setAcademicYear(e.target.value)}
           className="border rounded px-2 py-1 text-sm"
@@ -112,7 +112,7 @@ const FeesBalanceReport = () => {
           {['2023-2024', '2024-2025', '2025-2026'].map((year) => (
             <option key={year} value={year}>{year}</option>
           ))}
-        </select>
+        </select> */}
       </div>
         <div className="flex flex-wrap items-center gap-4">
           <div>
